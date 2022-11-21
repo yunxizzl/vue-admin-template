@@ -42,15 +42,16 @@ export const constantRoutes = [
     component: () => import('@/views/404'),
     hidden: true
   },
+
   {
-    path: '/address',
+    path: '/repo',
     component: Layout,
    
     children: [{
       path: 'list',
-      name: 'address',
-      component: () => import('@/views/address'),
-      meta: { title: '地址管理', icon: 'dashboard' }
+      name: 'repo',
+      component: () => import('@/views/repo/page'),
+      meta: { title: '题库管理', icon: 'dashboard' }
     }]
   },
 
